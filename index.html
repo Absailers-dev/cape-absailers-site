@@ -2,10 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cape Absailers | Rope Access Specialists</title>
-  <meta name="description" content="Cape Absailers — Rope access specialists for installations, repairs and maintenance." />
+
+  <!-- Primary SEO -->
+  <title>Cape Absailers (Abseilers) | Rope Access Specialists in Cape Town</title>
+  <meta name="description" content="Cape Absailers — professional rope access and abseiling specialists in Cape Town, Western Cape. Installations, maintenance, cleaning, rigging and anchor work done safely and efficiently." />
   <link rel="canonical" href="https://absailers.com/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Cape Absailers (Abseilers) | Rope Access Specialists in Cape Town" />
+  <meta property="og:description" content="Professional rope access and abseiling services across Cape Town and the Western Cape: installations, maintenance, cleaning, rigging and anchor work." />
+  <meta property="og:url" content="https://absailers.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://absailers.com/assets/logo.png" />
+  <meta property="og:site_name" content="Cape Absailers" />
+  <meta property="og:locale" content="en_ZA" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cape Absailers (Abseilers) | Rope Access Specialists in Cape Town" />
+  <meta name="twitter:description" content="Professional rope access and abseiling services in Cape Town and the Western Cape." />
+  <meta name="twitter:image" content="https://absailers.com/assets/logo.png" />
+
+  <!-- PWA / Theming niceties -->
+  <meta name="theme-color" content="#04549F" />
+  <link rel="icon" href="/assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EH9VFBPQM1"></script>
@@ -14,8 +38,12 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-EH9VFBPQM1');
+    /* To test quickly in GA DebugView, you can enable:
+       gtag('config', 'G-EH9VFBPQM1', { 'debug_mode': true });
+    */
   </script>
-  <!-- JSON-LD: Business Schema -->
+
+  <!-- JSON-LD: Local Business -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,7 +70,14 @@
         "opens":"08:00",
         "closes":"17:00"
       }
-    ]
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+27 21 510 2828",
+      "contactType": "customer service",
+      "areaServed": "ZA",
+      "availableLanguage": ["en"]
+    }
   }
   </script>
 
@@ -50,6 +85,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     :root{
       --primary: #04549F;
@@ -107,7 +143,7 @@
     .contact a:hover{text-decoration:underline}
 
     footer{padding:18px 20px; color:#4b5563; font-size:14px}
-    .footline{display:flex; gap:8px; align-items:center; justify-content:center}
+    .footline{display:flex; gap:8px; align-items:center; justify-content:center; text-align:center; flex-wrap:wrap}
     .dot{width:8px; height:8px; border-radius:50%; background:var(--accent)}
 
     #about{scroll-margin-top:84px}
@@ -121,7 +157,7 @@
   <header class="header">
     <div class="container nav">
       <a class="brand" href="#top" aria-label="Cape Absailers home">
-        <img src="assets/logo.png" alt="Cape Absailers Logo" />
+        <img src="assets/logo.png" alt="Cape Absailers logo — rope access and abseiling specialists" width="40" height="40" />
         <span>Cape Absailers</span>
       </a>
       <div style="display:flex; gap:10px; align-items:center;">
@@ -135,14 +171,17 @@
     <section class="hero">
       <div class="hero-inner container">
         <div class="hero-logo">
-          <img src="assets/logo.png" alt="Cape Absailers" />
+          <img src="assets/logo.png"
+               alt="Cape Absailers — Rope Access Specialists in Cape Town"
+               width="420" height="420" fetchpriority="high" loading="eager" />
         </div>
-        <h1>Rope Access Specialists</h1>
+        <h1>Cape Absailers (Abseilers) — Rope Access Specialists in Cape Town</h1>
         <div class="divider" aria-hidden="true"></div>
         <p class="blurb">
           Cape Absailers provides professional <strong>rope access</strong> services for
           <strong>installations</strong>, <strong>repairs</strong> and <strong>maintenance</strong>.
           Our IRATA-aligned teams deliver safe, efficient access to hard-to-reach places—on time and on budget.
+          Whether you search for <em>abseilers</em> or <em>absailers</em>, you've found the right crew.
         </p>
         <p><a class="cta" href="#contact">Get in touch</a></p>
       </div>
@@ -152,7 +191,7 @@
       <div class="container">
         <div class="grid">
           <article class="card">
-            <h3>Safe & Compliant</h3>
+            <h3>Safe &amp; Compliant</h3>
             <p>Best-practice methods, detailed risk assessments, and rigorous supervision on every project.</p>
           </article>
           <article class="card">
@@ -195,6 +234,8 @@
     <div class="container footline">
       <span class="dot" aria-hidden="true"></span>
       <span>© <span id="year"></span> Cape Absailers. All rights reserved.</span>
+      <span>•</span>
+      <span>8 Hely St, Ndabeni, Cape Town, 7405 • <a href="tel:+27215102828">+27 21 510 2828</a> • <a href="mailto:nikki@absailers.com">nikki@absailers.com</a></span>
     </div>
   </footer>
 
@@ -203,4 +244,3 @@
   </script>
 </body>
 </html>
-
