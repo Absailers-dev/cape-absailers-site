@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cape Absailers | Rope Access Specialists</title>
+  <meta name="description" content="Cape Absailers — Rope access specialists for installations, repairs and maintenance." />
+  <link rel="canonical" href="https://absailers.com/" />
+
+  <!-- JSON-LD: Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness","ProfessionalService","HomeAndConstructionBusiness"],
+    "@id": "https://absailers.com/#identity",
+    "name": "Cape Absailers",
+    "image": "https://absailers.com/assets/logo.png",
+    "url": "https://absailers.com/",
+    "telephone": "+27 21 510 2828",
+    "email": "nikki@absailers.com",
+    "description": "Cape Absailers provides professional rope access services for installations, repairs and maintenance.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8 Hely St, Ndabeni",
+      "addressLocality": "Cape Town",
+      "postalCode": "7405",
+      "addressCountry": "ZA"
+    },
+    "areaServed": ["Cape Town","Western Cape"],
+    "openingHoursSpecification": [
+      {
+        "@type":"OpeningHoursSpecification",
+        "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens":"08:00",
+        "closes":"17:00"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary: #04549F;
+      --primary-600:#0A66BB;
+      --accent:  #FCF101;
+      --accent-2:#F6831D;
+      --ink:    #141212;
+      --muted:  #596266;
+      --bg:     #c2c7c9;
+      --white:  #ffffff;
+      --radius: 16px;
+      --shadow: 0 10px 35px rgba(4,84,159,0.15);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--ink); background:var(--bg);
+    }
+    .header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(8px); background:rgba(255,255,255,0.75); border-bottom:1px solid rgba(4,84,159,0.08)}
+    .container{max-width:1100px; margin:0 auto; padding:0 20px}
+    .nav{display:flex; align-items:center; justify-content:space-between; height:64px}
+    .brand{display:flex; gap:12px; align-items:center; text-decoration:none}
+    .brand img{height:40px; width:40px; object-fit:contain; border-radius:50%}
+    .brand span{font-family: Montserrat, sans-serif; font-weight:800; letter-spacing:0.5px; color:var(--primary)}
+    .cta{display:inline-flex; align-items:center; gap:10px; padding:10px 16px; border-radius:999px; text-decoration:none; font-weight:600; border:2px solid var(--primary); color:var(--primary); background:var(--white)}
+    .cta:hover{background:var(--primary); color:var(--white)}
+
+    .hero{display:grid; place-items:center; padding:96px 20px 48px; position:relative; overflow:hidden}
+    .hero::before{
+      content:""; position:absolute; inset:-20% -10% auto -10%; height:60%; background:radial-gradient(1200px 400px at 50% -10%, rgba(4,84,159,0.10), transparent 65%);
+      pointer-events:none; z-index:0;
+    }
+    .hero-inner{display:grid; gap:28px; text-align:center; max-width:900px; z-index:1}
+    .hero-logo{display:grid; place-items:center}
+    .hero-logo img{width:min(420px, 70vw); height:auto; filter: drop-shadow(0 12px 30px rgba(0,0,0,0.08));}
+    .hero h1{font-family: Montserrat, sans-serif; font-size:clamp(28px, 4vw, 44px); margin:0; color:var(--ink)}
+    .tag{display:inline-block; margin:0 auto; background:var(--white); border:1px solid rgba(4,84,159,0.15); padding:8px 12px; border-radius:999px; color:var(--primary); font-weight:600}
+    .blurb{font-size:clamp(16px, 1.5vw, 19px); line-height:1.7; color:#2c2c2c}
+
+    .divider{height:3px; width:120px; background:linear-gradient(90deg, var(--accent), var(--accent-2)); border-radius:4px; margin:8px auto 0}
+
+    .features{padding:24px 20px 70px}
+    .grid{display:grid; gap:18px; grid-template-columns: repeat(12, 1fr)}
+    .card{grid-column:span 12; background:var(--white); border-radius:var(--radius); padding:18px 18px; box-shadow: var(--shadow); border:1px solid rgba(4,84,159,0.06)}
+    .card h3{margin:8px 0 6px; font-family: Montserrat, sans-serif; color:var(--primary)}
+    .card p{margin:0; color:#2d2d2d}
+    @media(min-width:720px){.card{grid-column:span 4}}
+
+    #contact{scroll-margin-top:84px}
+    .contact{padding:64px 20px 96px; background: linear-gradient(180deg, rgba(4,84,159,0.06), rgba(246,131,29,0.05)); border-top:1px solid rgba(4,84,159,0.08)}
+    .contact-box{background:var(--white); border-radius:var(--radius); padding:28px; box-shadow: var(--shadow); border:1px solid rgba(4,84,159,0.08)}
+    .contact h2{font-family: Montserrat, sans-serif; color:var(--primary); margin:0 0 10px}
+    .contact p{margin:0 0 12px}
+    .contact a{color:var(--primary-600); font-weight:600; text-decoration:none}
+    .contact a:hover{text-decoration:underline}
+
+    footer{padding:18px 20px; color:#4b5563; font-size:14px}
+    .footline{display:flex; gap:8px; align-items:center; justify-content:center}
+    .dot{width:8px; height:8px; border-radius:50%; background:var(--accent)}
+
+    #about{scroll-margin-top:84px}
+    .about{padding:64px 20px 32px}
+    .about-box{background:var(--white); border-radius:var(--radius); padding:28px; box-shadow: var(--shadow); border:1px solid rgba(4,84,159,0.08)}
+    .about h2{font-family: Montserrat, sans-serif; color:var(--primary); margin:0 0 10px}
+    .about p{margin:0 0 14px; line-height:1.75}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Cape Absailers home">
+        <img src="assets/logo.png" alt="Cape Absailers Logo" />
+        <span>Cape Absailers</span>
+      </a>
+      <div style="display:flex; gap:10px; align-items:center;">
+        <a class="cta" href="#about" aria-label="Jump to About">About us</a>
+        <a class="cta" href="#contact" aria-label="Jump to contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-logo">
+          <img src="assets/logo.png" alt="Cape Absailers" />
+        </div>
+        <h1>Rope Access Specialists</h1>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="blurb">
+          Cape Absailers provides professional <strong>rope access</strong> services for
+          <strong>installations</strong>, <strong>repairs</strong> and <strong>maintenance</strong>.
+          Our IRATA-aligned teams deliver safe, efficient access to hard-to-reach places—on time and on budget.
+        </p>
+        <p><a class="cta" href="#contact">Get in touch</a></p>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="grid">
+          <article class="card">
+            <h3>Safe & Compliant</h3>
+            <p>Best-practice methods, detailed risk assessments, and rigorous supervision on every project.</p>
+          </article>
+          <article class="card">
+            <h3>Efficient Access</h3>
+            <p>Minimal disruption to your site with rapid deployment and precise task execution.</p>
+          </article>
+          <article class="card">
+            <h3>Install • Repair • Maintain</h3>
+            <p>From anchor installation and testing to painting, cleaning, and rigging — we’re your complete urban access partner.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about-box">
+        <h2>About us</h2>
+        <p><strong>Hey there — and welcome!</strong></p>
+        <p>Cape Absailers launched in Cape Town in late 2025, led by Nikki and backed by a team with over <strong>90 years of combined experience</strong> in the rope access industry.</p>
+        <p>We’re here to shake things up — bringing <strong>fresh energy, reliable expertise, and a new standard of service</strong> to the local market. Keep an eye out… some exciting announcements about our specialist services are on the way!</p>
+        <p>At Cape Absailers, you’ll find <strong>exceptional customer service, attention to detail, and top-quality workmanship</strong> at the heart of everything we do.</p>
+        <p>We’re already hard at work across Cape Town — but we’ve always got time for a chat.</p>
+        <p><strong>Get in touch</strong> and let’s talk about how we can help.</p>
+        <p><em>P.S. We’re fully accredited, fully insured, and operate to the highest local and international safety standards — because safety always comes first.</em></p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container contact-box">
+        <h2>Contact</h2>
+        <p><strong>Contact Nikki Nolan</strong></p>
+        <p>Tel: <a href="tel:+27215102828">+27 21 510 2828</a></p>
+        <p>Email: <a href="mailto:nikki@absailers.com">nikki@absailers.com</a></p>
+        <p>Prefer email? Click the address above and your mail client will open with our details filled in.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footline">
+      <span class="dot" aria-hidden="true"></span>
+      <span>© <span id="year"></span> Cape Absailers. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
